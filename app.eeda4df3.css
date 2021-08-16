@@ -60,6 +60,13 @@ body:before {
 	-webkit-text-stroke-color: #000;
 }
 
+@media(max-width:740px){
+    .counter{
+        font-size: 80px;
+        -webkit-text-stroke-width: 3px;
+    }
+}
+
 #img-main {
 	background-image: url(img/popcat-default.png);
     flex-grow: 1;

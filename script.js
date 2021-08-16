@@ -8,6 +8,31 @@ if (isNaN(pop_count)) {
 document.getElementsByClassName('counter')[0].innerText = pop_count;
 
 document.onkeydown = function() {
+    down_key();
+};
+
+document.onkeyup = function () {
+    up_key();
+};
+
+$(document).mousedown(function() {
+    down_key();
+});
+
+$(document).mouseup(function() {
+    up_key();
+});
+
+$(document).on('touchstart', function() {
+    down_key();
+});
+
+$(document).on('touchend', function() {
+    up_key();
+});
+
+
+function down_key() {
     if (pressed == false) {
         var audio = new Audio('sound.mp3');
         audio.play();
@@ -16,10 +41,10 @@ document.onkeydown = function() {
         document.getElementsByClassName('counter')[0].innerText = pop_count;
         document.getElementById('img-main').style="background-image: url(img/popcat-open.png);"
         pressed = true;
-    }
+    };
 };
 
-document.onkeyup = function () {
+function up_key() {
     document.getElementById('img-main').style="background-image: url(img/popcat-default.png);"
     pressed = false;
 };
