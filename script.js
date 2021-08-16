@@ -14,13 +14,13 @@ document.onkeydown = function() {
         pop_count +=1;
         document.cookie = 'pop_count=' + pop_count;
         document.getElementsByClassName('counter')[0].innerText = pop_count;
-        document.getElementById('img-main').style="background-image: url(https://popcat.click/img/op.353767c3.png);"
+        document.getElementById('img-main').style="background-image: url(img/popcat-open.png);"
         pressed = true;
     }
 };
 
 document.onkeyup = function () {
-    document.getElementById('img-main').style="background-image: url(https://popcat.click/img/p.1e9d00be.png);"
+    document.getElementById('img-main').style="background-image: url(img/popcat-default.png);"
     pressed = false;
 };
 
