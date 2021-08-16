@@ -5,6 +5,7 @@ pop_count = parseInt(document.cookie.toString().replaceAll("pop_count=", ""));
 if (isNaN(pop_count)) {
     pop_count = 0;
 }
+document.getElementsByClassName('counter')[0].innerText = pop_count;
 
 document.onkeydown = function() {
     if (pressed == false) {
