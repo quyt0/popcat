@@ -61,7 +61,7 @@ body:before {
 }
 
 #img-main {
-	background-image: url(/img/popcat-default.png);
+	background-image: url(img/popcat-default.png);
     flex-grow: 1;
     width: 100%;
     max-width: 800px;
